@@ -1,0 +1,26 @@
+.about-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.about-container h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #2563eb; /* blue theme */
+}
+
+.about-container p {
+  margin-bottom: 15px;
+  color: #343a40;
+}
+
+.about-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 20px;
+}

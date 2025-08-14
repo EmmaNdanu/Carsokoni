@@ -1,0 +1,25 @@
+/* src/components/car/FeaturedCars.css */
+.car-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+.car-card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+  background-color: #fff;
+}
+
+.car-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.car-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

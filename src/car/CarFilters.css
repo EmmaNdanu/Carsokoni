@@ -1,0 +1,33 @@
+/* CarFilters.css */
+.car-filters {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.car-filters input,
+.car-filters select {
+  padding: 0.5rem;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 300px;
+}
+
+.tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.tags span {
+  padding: 0.3rem 0.8rem;
+  border: 1px solid #888;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.tags span.active {
+  background-color: #000;
+  color: #fff;
+}
