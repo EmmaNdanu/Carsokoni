@@ -1,20 +1,18 @@
 import React from "react";
-import "./CarFilters.css"; // Ensure this file exists and styles correctly
+import "./CarFilters.css"; 
 const CarFilters = ({
-  types = [], // array of car types like SUV, Sedan, etc.
+  types = [], 
   selectedType = "",
   onTypeSelect = () => {},
   sortOption = "",
   onSort = () => {},
 }) => {
-  // You can also directly define the fixed types array instead of using props.types
   const predefinedTypes = ["SUV", "Sedan", "Hatchback", "Convertible"];
   const handleCategoryClick = (type) => {
-    onTypeSelect(type); // this triggers the parent to filter cars
+    onTypeSelect(type); 
   };
   return (
     <div className="car-filters">
-      {/* Browse by Category Buttons */}
       <div className="category-buttons" style={{ marginBottom: "1rem" }}>
         {predefinedTypes.map((type) => (
           <button
@@ -26,7 +24,6 @@ const CarFilters = ({
           </button>
         ))}
       </div>
-      {/* Dropdown Filters */}
       <div className="filter-group">
         <label htmlFor="type-select">Filter by Type:</label>
         <select

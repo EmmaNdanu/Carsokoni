@@ -4,7 +4,7 @@ const cars = [
     brand: "Toyota",
     model: "Corolla",
     price: 2800000,
-    image: "/images/toyota corolla.jpeg",
+    image: process.env.PUBLIC_URL + "/images/toyota_corolla.jpeg",
     category: "SUV",
     specifications: {
       engine: "1.8L 4-Cylinder",
@@ -21,7 +21,7 @@ const cars = [
     brand: "Honda",
     model: "Civic",
     price: 2400000,
-    image: "/images/Honda Civic.jpeg",
+    image: process.env.PUBLIC_URL + "/images/honda_civic.jpeg",
     category: "Sedan",
     specifications: {
       engine: "2.0L 4-Cylinder",
@@ -38,7 +38,7 @@ const cars = [
     brand: "BMW",
     model: "X5",
     price: 3000000,
-    image: "/images/BMW X5.jpeg",
+    image: process.env.PUBLIC_URL + "/images/bmw_x5.jpeg",
     category: "Convertible",
     specifications: {
       engine: "3.0L 6-Cylinder",
@@ -55,7 +55,7 @@ const cars = [
     brand: "Nissan",
     model: "Altima",
     price: 2300000,
-    image: "/images/nissan altima.jpeg",
+    image: process.env.PUBLIC_URL + "/images/nissan_altima.jpeg",
     category: "Sedan",
     specifications: {
       engine: "2.5L 4-Cylinder",
@@ -72,7 +72,7 @@ const cars = [
     brand: "Ford",
     model: "Mustang",
     price: 2100000,
-    image: "/images/Ford Mustang.jpeg",
+    image: process.env.PUBLIC_URL + "/images/ford_mustang.jpeg",
     category: "Hatchback",
     specifications: {
       engine: "5.0L V8",
@@ -89,7 +89,7 @@ const cars = [
     brand: "Mazda",
     model: "CX-5",
     price: 4500000,
-    image: "/images/mazda cx5.jpeg",
+    image: process.env.PUBLIC_URL + "/images/mazda_cx5.jpeg",
     category: "SUV",
     specifications: {
       engine: "2.5L 4-Cylinder",

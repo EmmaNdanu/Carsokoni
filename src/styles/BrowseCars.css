@@ -1,18 +1,14 @@
-/* Page shell */
 .browse-page {
   max-width: 1200px;
   margin: 0 auto;
   padding: 24px;
-  background-color: #ffeeba; /* your requested background */
+  background: linear-gradient(to right, #635e68, #fc25b4);
 }
-
 .page-title {
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 16px;
 }
-
-/* Top controls */
 .controls {
   display: flex;
   gap: 12px;
@@ -20,7 +16,6 @@
   flex-wrap: wrap;
   margin-bottom: 12px;
 }
-
 .search,
 .select {
   padding: 10px 12px;
@@ -28,13 +23,11 @@
   border-radius: 8px;
   outline: none;
 }
-
 .search:focus,
 .select:focus {
   border-color: #2563eb;
   box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
 }
-
 /* Category chips */
 .category-tags {
   display: flex;
@@ -42,7 +35,6 @@
   flex-wrap: wrap;
   margin-bottom: 18px;
 }
-
 .category-tag {
   padding: 8px 16px;
   border: 1px solid #ccc;
@@ -53,18 +45,15 @@
   font-weight: 500;
   transition: background 0.15s, color 0.15s, border-color 0.15s, transform 0.1s;
 }
-
 .category-tag:hover {
   background: #f0f0f0;
   transform: translateY(-1px);
 }
-
 .category-tag.active {
   background: #2563eb;
   color: #fff;
   border-color: #2563eb;
 }
-
 .category-tag.clear {
   border-color: #ef4444;
   color: #ef4444;
@@ -73,8 +62,6 @@
   background: #ef4444;
   color: #fff;
 }
-
-/* Grid of cards */
 .car-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));

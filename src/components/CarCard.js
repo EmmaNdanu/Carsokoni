@@ -1,7 +1,6 @@
 import React from "react";
 import "./CarCard.css";
 import { Link } from "react-router-dom";
-
 const CarCard = ({ car }) => {
 return (
 <Link to={`/cars/${car.id}`} className="block border rounded-md p-4 hover:shadow-lg car-card">
@@ -12,5 +11,4 @@ return (
 </Link>
 );
 };
-
 export default CarCard;

@@ -1,24 +1,27 @@
-// src/pages/Home.js
 import React from "react";
 import FeaturedCars from "../car/FeaturedCars";
-
-import { Link } from "react-router-dom";
+import Footer from "../components/common/Footer";
 import NewsletterSignup from "../components/common/NewsletterSignup";
-import HeroSection from "../components/common/HeroSection"; // Assuming you have a HeroSection component
+import HeroSection from "../components/common/HeroSection";
 const Home = () => {
   return (
-    <div>
-  
+    <div className="home-container">
       <HeroSection />
-      
-      <h1>Welcome to Car Sales App</h1>
-      <Link to="/cars">View Car Listings</Link>
-      <FeaturedCars />
-      <NewsletterSignup />
-
-      
-    </div>
+  <section className="Welcome-section">
+        <h1>Welcome to Carsokoni </h1>
+        <p>
+          Your trusted online marketplace for buying and selling cars in Kenya. 
+          <br />Browse, compare, and find your dream car from the comfort of your home
+        </p>
+         </section>
+         <section className="featured-cars-section">
+          
+        <h3>Featured Cars</h3>
+        <FeaturedCars />
+      </section>
+<NewsletterSignup /> 
+<Footer />
+</div>
   );
 };
-
 export default Home;

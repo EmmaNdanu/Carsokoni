@@ -1,24 +1,18 @@
 import React, { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
-import cars from "../data/Cars.js"; // Make sure this path is correct
-import "../styles/BrowseCars.css"; // Keep your current CSS
-
+import cars from "../data/Cars.js"; 
+import "../styles/BrowseCars.css"; 
 function BrowseCars() {
   const [selectedType, setSelectedType] = useState("");
   const [sortOption, setSortOption] = useState("");
   const [query, setQuery] = useState("");
-
   const categories = ["SUV", "Sedan", "Hatchback", "Convertible"];
-
   const filteredCars = useMemo(() => {
     let list = cars;
-
-    // Filter by category
     if (selectedType) {
       list = list.filter((c) => c.category === selectedType);
     }
-
-    // Search filter
+    // Search by brand 
     if (query.trim()) {
       const q = query.toLowerCase();
       list = list.filter(
@@ -27,8 +21,6 @@ function BrowseCars() {
           c.model.toLowerCase().includes(q)
       );
     }
-
-    // Sorting
     if (sortOption === "low-to-high")
       list = [...list].sort((a, b) => a.price - b.price);
     if (sortOption === "high-to-low")
@@ -36,12 +28,9 @@ function BrowseCars() {
 
     return list;
   }, [selectedType, sortOption, query]);
-
   return (
     <div className="browse-page">
       <h1 className="page-title">Browse Cars</h1>
-
-      {/* Search and Sort */}
       <div className="controls">
         <input
           className="search"
@@ -49,7 +38,6 @@ function BrowseCars() {
           value={query}
           onChange={(e) => setQuery(e.target.value)}
         />
-
         <select
           className="select"
           value={sortOption}
@@ -60,8 +48,6 @@ function BrowseCars() {
           <option value="high-to-low">Price: High → Low</option>
         </select>
       </div>
-
-      {/* Category Filters */}
       <div className="category-tags">
         {categories.map((type) => (
           <button
@@ -85,8 +71,6 @@ function BrowseCars() {
           </button>
         )}
       </div>
-
-      {/* Cars Grid */}
       <div className="car-grid">
         {filteredCars.map((car) => (
           <div className="card" key={car.id}>
@@ -114,5 +98,4 @@ function BrowseCars() {
     </div>
   );
 }
-
 export default BrowseCars;

@@ -2,7 +2,6 @@
 import React from "react";
 import "./Footer.css";
 import { Link } from "react-router-dom";
-
 const Footer = () => {
   return (
     <footer className="footer">
@@ -26,10 +25,6 @@ const Footer = () => {
         <div>
           <h4>Quick Links</h4>
           <ul>
-             <li><Link to="/about-us">About Us</Link></li>
-            <li>
-              <Link to="/browse-Cars">Browse Cars</Link>
-            </li>
             <li>
               <Link to="/login">Login</Link>
             </li>
@@ -43,5 +38,4 @@ const Footer = () => {
     </footer>
   );
 };
-
 export default Footer;

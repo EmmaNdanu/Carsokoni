@@ -5,23 +5,19 @@
   padding: 4rem 2rem;
   background-color: #cf9e9e;
 }
-
 .hero-content {
   max-width: 50%;
 }
-
 .hero-content h1 {
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 1rem;
 }
-
 .hero-content p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
-  color: #555;
+  color: #050505;
 }
-
 .cta-button {
   display: inline-block;
   background: #2a9d8f;
@@ -32,11 +28,9 @@
   font-weight: bold;
   transition: background 0.3s ease;
 }
-
 .cta-button:hover {
   background: #21867a;
 }
-
 .hero-image img {
   max-width: 500px;
   border-radius: 10px;

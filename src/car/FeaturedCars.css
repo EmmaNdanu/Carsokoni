@@ -1,4 +1,3 @@
-/* src/components/car/FeaturedCars.css */
 .car-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -13,13 +12,11 @@
   transition: box-shadow 0.3s ease;
   background-color: #fff;
 }
-
 .car-card img {
   width: 100%;
   height: auto;
   border-radius: 5px;
 }
-
 .car-card:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }

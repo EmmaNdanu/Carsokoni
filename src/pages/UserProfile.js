@@ -1,16 +1,13 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "../styles/UserProfile.css";
-
 export default function UserProfile() {
   const navigate = useNavigate();
   const currentUser = JSON.parse(localStorage.getItem("currentUser"));
-
   const handleLogout = () => {
     localStorage.removeItem("currentUser");
     navigate("/login");
   };
-
   if (!currentUser) {
     return (
       <div className="profile-container">
@@ -19,7 +16,6 @@ export default function UserProfile() {
       </div>
     );
   }
-
   return (
     <div className="profile-container">
       <h2>Welcome, {currentUser.name}</h2>

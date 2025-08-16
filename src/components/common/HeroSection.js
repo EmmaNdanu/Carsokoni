@@ -1,6 +1,5 @@
 import './HeroSection.css';
 import React from 'react';
-
 export default function HeroSection() {
   return (
     <section id="hero">
@@ -9,9 +8,8 @@ export default function HeroSection() {
         <p>Explore a wide range of quality cars today.</p>
         <a href="/browse-cars" className="cta-button">Browse Cars</a>
       </div>
-
       <div className="hero-image">
-        <img src="/images/mazda cx5.jpeg" alt="Mazda CX-5" />
+        <img src={process.env.PUBLIC_URL + "/images/mazda_cx5.jpeg"} alt="Mazda CX-5" />
       </div>
     </section>
   );
