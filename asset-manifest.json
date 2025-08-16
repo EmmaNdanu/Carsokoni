@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Carsokoni/static/css/main.7d6afcfb.css",
+    "main.js": "/Carsokoni/static/js/main.951f12a0.js",
+    "index.html": "/Carsokoni/index.html",
+    "main.7d6afcfb.css.map": "/Carsokoni/static/css/main.7d6afcfb.css.map",
+    "main.951f12a0.js.map": "/Carsokoni/static/js/main.951f12a0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7d6afcfb.css",
+    "static/js/main.951f12a0.js"
+  ]
+}
