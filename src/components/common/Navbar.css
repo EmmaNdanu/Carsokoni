@@ -1,23 +1,52 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 1rem 2rem;
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  align-items: center;
+  padding: 15px 20px;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
 }
 .logo {
-  font-size: 2rem;
+  font-size: 22px;
   font-weight: bold;
 }
 .nav-links {
-  list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 20px;
+  list-style: none;
 }
-.nav-links li a {
-  font-weight: 700;
-  transition: color 0.3s;
+.logout-btn {
+  background: #f44336;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
 }
-.nav-links li a:hover {
-  color: #007bff;
+/* Hamburger hidden by default */
+.hamburger {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+/* 📱 Mobile Styles */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: white;
+    width: 100%;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+  }
+  .nav-links.active {
+    display: flex;
+  }
 }
